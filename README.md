@@ -1,8 +1,8 @@
-# E-commerce Traffic and Website Analysis in MySQL Workbench
+# E-commerce Traffic and Website Analysis in MySQL
 ## Overview
 Maven Fuzzy Factory is a virtual online retailer which has just launched their first product.
 As an E-commerce Database Analyst, I used MySQL to explore the database to understand how customers access and interact with the site,
-analyzed landing page performance and conversion with A/B testing, and used data to understand the impact of new product launches.
+analyzed landing page performance and conversion with A/B testing, and used data to understand the impact of new product launches, with the goal of optimising business’ marketing channel, website and product portfolio that helps the business grow.
 
 ## Maven Fuzzy Factory Database Schema
 
@@ -25,9 +25,9 @@ Traffic source analysis is about understanding where the customers are coming fr
 - Identifying opportunities to eliminate wasted spend or scale high-converting traffic
 
 #### Tasks
-1. Finding top traffic sources with highest volume of sessions
-2. Calculate traffic source session-to-order conversion rates for the decision either to dial up or dial down the search bids
-3. Trend Analysis of the volume of sessions after changing the bids
+1. Finding top traffic sources with highest volume of sessions.
+2. Calculate traffic source session-to-order conversion rates for the decision either to dial up or dial down the search bids.
+3. Trend Analysis of the volume of sessions after changing the bids.
 
 -> [SQL Queries](Traffic_Source_Analysis.sql)
 
@@ -38,8 +38,8 @@ Analyzing for bid optimization to about understanding the value of various segme
 - Analyzing the impact that bid changes have on ranking in the auctions, and the volume of customers driven to the website
 
 #### Tasks
-1. Bid optimisation for paid traffic by calculating sessions-to-orders by device type
-2. Trending analysis by device type
+1. Bid optimisation for paid traffic by calculating sessions-to-orders by device type.
+2. Trending analysis by device type.
 
 -> [SQL Queries](Bid_Optimization.sql)
 
@@ -50,8 +50,8 @@ Website content analysis is about understanding which pages are seen the most by
 - Identifying the most common entry pages to the website
 
 #### Tasks
-- Finding top website pages
-- Finding top landing pages
+1. Finding top website pages.
+2. Finding top landing pages.
 
 -> [SQL Queries](Top_Website_Pages_And_Entry_Pages.sql)
 
@@ -62,11 +62,11 @@ Landing page analysis and testing is about understanding the performance of the 
 - Analyzing test results and making recommendations on which version of landing pages should be used going forward
 
 #### Tasks
-- Calculating bounce rate of the landing page
+1. Calculating bounce rate of the landing page.
 The original landing page had a high bounce rate. We tested a new custom landing by setting up an A/B experiment to see if the new page does better.
-- Landing page tests: comparing the bounce rates of old and new landing page
+2. Landing page tests: comparing the bounce rates of old and new landing page.
 The new landing page was a success with lower bounce rate. Website manager rerouted all of the paid search traffic to the new landing page.
-- Landing page trend analysis: to confirm that the traffic was all routed as expected and to see the trend of the bounce rate after implementing the new landing page -> [SQL query](Landing_Page_Trend_Analysis.sql)
+3. Landing page trend analysis: to confirm that the traffic was all routed as expected and to see the trend of the bounce rate after implementing the new landing page.
 
 -> [SQL Queries](Landing_Page_Performance_and_Testing.sql)
 
@@ -77,9 +77,9 @@ Conversion funnel analysis is about understanding and optimize each step of user
 - Optimizing critical pain point where users are abandoning, so that we can convert more users and sell more products
 
 #### Tasks
-- Building conversion funnels
+1. Building conversion funnels.
 Shipping-to-billing click-through rate was pretty low. We tested an updated billing page that made the customers more comfortable entering their credit card info.
-- Analyzing conversion funnel tests: to see if new version of the billing page is doing much better job converting customers
+2. Analyzing conversion funnel tests: to see if new version of the billing page is doing much better job converting customers.
 
 -> [SQL Queries](Conversion_Funnel_Analysis.sql)
 
@@ -90,11 +90,11 @@ Analyzing a portfolio of marketing channels by drawing insight from the data on 
 - Optimizing bids and allocating marketing spend across a multi-channel portfolio to achieve maximum performance
 
 #### Tasks
-- Analyzing channel portfolios: to find out which ads (utm_content) performs better, with better sessions-to-orders conversion rate
-- Comparing channel characteristics (percentage of device type)
-- Cross channel bid optimisation (by device type): to know whether we should have the same bids for both search channels
-- Analyzing channel portfolio trends (after bidding down): to see the impact of bid changes
-- Direct, Organic and Brand-Driven Traffic Analysis: to see whether the free traffics are growing together with the paid brand traffic
+1. Analyzing channel portfolios: to find out which ads (utm_content) performs better, with better sessions-to-orders conversion rate.
+2. Comparing channel characteristics (percentage of device type).
+3. Cross channel bid optimisation (by device type): to know whether we should have the same bids for both search channels.
+4. Analyzing channel portfolio trends (after bidding down): to see the impact of bid changes.
+5. Direct, Organic and Brand-Driven Traffic Analysis: to see whether the free traffics are growing together with the paid brand traffic.
 
 -> [SQL Queries](Channel_Portfolio_Management_Analysis.sql)
 
@@ -104,8 +104,8 @@ Analyzing business pattern is about generating insights to help maximize the eff
 - Analyzing seasonality for better prepare for upcoming spikes and slowdowns in demand
 
 #### Tasks
-- Seasonality: to find any seasonal trend that should be planned for next year, example more customer support and better inventory management during peak seasons
-- Business Patterns: adding live chat support to improve customer experience (to see when is the peak hours during the day with the most average sessions)
+1. Seasonality: to find any seasonal trend that should be planned for next year, example more customer support and better inventory management during peak seasons.
+2. Business Patterns: adding live chat support to improve customer experience (to see when is the peak hours during the day with the most average sessions).
 
 -> [SQL Queries](Seasonality_Analysis_and_Business_Pattern.sql)
 
@@ -116,18 +116,18 @@ Analyzing product sales can help you understand how each product is contributing
 - Watching product sales trends to understand the overall health of the business
 
 #### Tasks
-- Product-Level Sales: Monthly trends analysis will serve a great baseline data so that we can see how the revenue and margin evolve as we roll out a new product
-- Product Launches: To see the change in conversion rate and revenue over the months after new product launched
-- Product-Level Website Pathing:
-  - to analyse the impact on customer website behavior
-  - to understand how many customer are hitting the product’s page and then what they do next on the website, either the customer will just abandon at the product’s page or will click to one the products
-  - to analyse clickthrough rate and next page performance
-- Building Product-Level Conversion Funnels: for each product, the full conversion funnel from each product page to a sale event. Comparison between conversion funnels in order to understand which of the products converts better and if there are specific drop off points for specific products
-- Cross-Selling Products:
-  - to understand which products users are most likely to purchase together, and offering smart product recommendations
+1. Product-Level Sales: Monthly trends analysis will serve a great baseline data so that we can see how the revenue and margin evolve as we roll out a new product.
+2. Product Launches: To see the change in conversion rate and revenue over the months after new product launched.
+3. Product-Level Website Pathing:
+  - to analyse the impact on customer website behavior.
+  - to understand how many customer are hitting the product’s page and then what they do next on the website, either the customer will just abandon at the product’s page or will click to one the products.
+  - to analyse clickthrough rate and next page performance.
+4. Building Product-Level Conversion Funnels: for each product, the full conversion funnel from each product page to a sale event. Comparison between conversion funnels in order to understand which of the products converts better and if there are specific drop off points for specific products.
+5. Cross-Selling Products:
+  - to understand which products users are most likely to purchase together, and offering smart product recommendations.
   - to calculate the cart clickthrough rate before and after implementing the cross sell product in the cart page and to see whether the customer is annoyed by the smart product recommendation.
-- Product Portfolio Expansion: Pre-post analysis comparing the month before vs. the month after the cross sell product launch to see the performance metrics like session-to-order conversion rate, aov, product per order and revenue per session
-- Product Refund Rates (Total number of refunds / total number of product sold): to measure quality issues
+6. Product Portfolio Expansion: Pre-post analysis comparing the month before vs. the month after the cross sell product launch to see the performance metrics like session-to-order conversion rate, aov, product per order and revenue per session.
+7. Product Refund Rates (Total number of refunds / total number of product sold): to measure quality issues.
 
 -> [SQL Queries](Product_Sales_Analysis.sql)
 
@@ -138,9 +138,9 @@ Analyzing the repeat visits helps us understand the overall user behavior and it
 - Using the repeat visit activity to build a better understanding of the value of a customer in order to better optimize marketing channels
 
 #### Tasks
-- Identifying repeat visitors
-- Analysing time to repeat: how many days is the customer coming back again to visit again
-- Analysing repeat channel behaviour (mostly through organic search, direct type-in or paid brand channel)
-- Analysing new and repeat conversion rates as well as revenue per session
+1. Identifying repeat visitors.
+2. Analysing time to repeat: how many days is the customer coming back again to visit again.
+3. Analysing repeat channel behaviour (mostly through organic search, direct type-in or paid brand channel).
+4. Analysing new and repeat conversion rates as well as revenue per session.
 
 -> [SQL Queries](User_Repeat_Behavior_Analysis.sql)
