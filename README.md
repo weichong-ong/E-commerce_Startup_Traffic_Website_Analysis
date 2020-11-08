@@ -2,7 +2,7 @@
 ## Overview
 Maven Fuzzy Factory is a virtual online retailer which has just launched their first product.
 As an E-commerce Database Analyst, I used MySQL to explore the database to understand how customers access and interact with the site,
-analyzed landing page performance and conversion with A/B testing, and used data to understand the impact of new product launches, with the goal of optimizing business’ marketing channel, website and product portfolio that helps the business grow.
+analyzed landing page performance and conversion with A/B testing, and used data to understand the impact of new product launches, with the goal of optimizing business’ marketing channel, website and product portfolio to help the business grow.
 
 ## Maven Fuzzy Factory Database Schema
 
